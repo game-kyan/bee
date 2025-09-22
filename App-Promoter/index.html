@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetOnline Mobile App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./Images/logo.png" alt="BetOnline Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#">CASINO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">SPORTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">SLOTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">LIVE CASINO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">PROMOTIONS</a></li>
+            </ul>
+            <div class="top-btn-sec">
+                <a href="#" class="btn btn-login me-2">LOG IN</a>
+                <a href="#" class="btn btn-login">SIGN UP</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="app-section">
+        <div class="container">
+            <div class="row mob-change">
+                <div class="col-12 col-md-6 hero-left">
+                    <h3>BetOnline</h3>
+                    <h1>Mobile App</h1>
+                    <p>Save storage space, and play smoothly!<br>Scroll down to see how to get the app and start playing now.</p>
+                    <a href="#" download class="apkDownloadBtn btn btn-app"><i class="fab fa-google-play"></i> Get App for ANDROID</a>
+                    <button id="get-ios-app" class="btn btn-app"><i class="fab fa-apple"></i> Get App for IOS</button>
+                </div>
+                <div class="col-12 col-md-6 hero-right">
+                    <div class="position-relative">
+                        <img src="./Images/top.png" alt="Mobile App" class="phone-img">
+                        <div class="glow-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install -->
+    <section class="install-section">
+        <div class="container">
+            <h2>Why Use BetOnline & Its Mobile App</h2>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="step-box">
+                        <h3>BENEFIT 1</h3>
+                        <p>Access sports betting, slots, and casino games from desktop or mobile browser.</p>
+                        <img src="./Images/promo1.png" alt="Benefit 1" class="step-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="step-box">
+                        <h3>BENEFIT 2</h3>
+                        <p>Use the mobile app to enjoy smoother gameplay, fast loading, and notifications.</p>
+                        <img src="./Images/promo2.png" alt="Benefit 2" class="step-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="step-box">
+                        <h3>BENEFIT 3</h3>
+                        <p>Stay updated with live odds and betting stats—wherever you go, anytime.</p>
+                        <img src="./Images/promo3.png" alt="Benefit 3" class="step-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- iOS Download Section -->
+    <section id="ios-download" class="install-section">
+        <div class="container">
+            <h2>Download & Install on iOS</h2>
+            <p class="mb-4">Follow these simple steps to add the BetOnline app to your iPhone:</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="step-box text-start">
+                        <ol>
+                            <li>Click the button below: <b>“Get the App”</b>.</li>
+                            <li>On Safari or Chrome, tap the <b>Share</b> button (square with ↑ arrow).</li>
+                            <li>Scroll down and select <b>Add to Home Screen</b>.</li>
+                            <li>Tap <b>Add</b> → The shortcut will now appear on your home screen.</li>
+                        </ol>
+                        <a href="https://betfume.com/" class="btn btn-app mt-3">Get the App</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <a href="https://www.responsiblegambling.org/" target="_blank" class="btn" style="padding: 0px; margin-bottom: 10px;">Learn About Responsible Gaming</a>
+                <p>Copyright © 1991-2024 BetOnline. All Rights Reserved.</p>
+                <p>Gambling can be addictive. Please play responsibly.</p>
+                <p>© 2025 BetOnline Casino. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scroll to iOS Section -->
+    <script>
+      document.getElementById("get-ios-app").onclick = function() {
+        document.getElementById("ios-download").scrollIntoView({ behavior: "smooth" });
+      };
+    </script>
+</body>
+</html>
